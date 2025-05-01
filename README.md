@@ -75,7 +75,9 @@ model/
 <hr>
 
 <h2>⚡ Notes</h2>
-
 <ul>
 <li>If you move the model directory (<code>model/my_model</code>), be sure to update the path in <code>model_loader.py</code>.</li>
-<li>The model files can be downloaded <a href="https://drive.google.com/file/d/1JVIVQMk
+<li>The model files can be downloaded <a href="https://drive.google.com/file/d/1JVIVQMkJw1ZV0p4XmXJZTZDX4_VhjWKz/view?usp=sharing" target="_blank">here</a>.</li>
+</ul>
+
+<hr>
