@@ -47,14 +47,14 @@ cd stock_news_classifier
 <pre><code>POST http://localhost:8000/predict
 
 {
-  "text": "Samsung Electronics has launched a new product."
+  "text": "삼성전자 주가 상승"
 }
 </code></pre>
 
 <h4>Example Response</h4>
 
 <pre><code>{
-  "result": "Positive",
+  "result": "긍정",
   "confidence": 92.45
 }
 </code></pre>
