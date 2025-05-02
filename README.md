@@ -1,9 +1,11 @@
 <h1>📦 Stock News Classifier</h1>
 
 <p>This is an AI model that classifies South Korean stock market news into positive or negative sentiment categories.</p>
-
 <hr>
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/bbbf5f05-9981-439e-ba68-81cc5b96dd30" width="600"/>
+</p>
 <h2>🚀 Installation & Execution</h2>
 
 <h3>1. Clone the Repository</h3>
