@@ -4,28 +4,51 @@
 <hr>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/bbbf5f05-9981-439e-ba68-81cc5b96dd30" width="600"/>
+  <img src="https://github.com/user-attachments/assets/3d2ae08f-61ff-4999-bc98-f9ecad924688" width="600"/>
+  <img src="https://github.com/user-attachments/assets/108c01b4-d0e8-4462-8d0d-d51ca1710333" width="600"/>
 </p>
 
 
-## Training Summary
+## 📊 Training Summary
 
-- **Training steps**: 360
-- **Training loss**: 0.2370
-- **Training runtime**: 329.5 seconds
-- **Samples per second**: 8.68
-- **Steps per second**: 1.093
-- **Epochs**: 5
+This project was designed to fine-tune the `klue/bert-base` model on a small-scale Korean text classification dataset (700 samples).  
+To prevent overfitting and improve generalization, the lower layers of BERT (embeddings and first 2 encoder blocks) were frozen during training.
 
-## Evaluation Results
+### ⚙️ Configuration
+- **Pretrained model**: `klue/bert-base`
+- **Train samples**: ~700
+- **Epochs**: 3
+- **Batch size**: 8
+- **Learning rate**: 1e-5
+- **Frozen layers**: embeddings + encoder.layer.0~1
+- **Early stopping**: Enabled (patience=1)
 
-- **Evaluation loss**: 0.4477
-- **Accuracy**: 90.97%
-- **Precision**: 91.64%
-- **Recall**: 90.21%
-- **F1 Score**: 90.69%
-- **Evaluation runtime**: 4.03 seconds
-This project achieved a training loss of 0.2370 and an evaluation accuracy of approximately 91% after 5 epochs, demonstrating stable training and strong performance on the validation dataset.
+---
+
+### 🏋️ Training Metrics
+- **Training steps**: 216  
+- **Training loss**: `0.5033`  
+- **Training runtime**: `94.28s`  
+- **Samples/sec**: `18.20`  
+- **Steps/sec**: `2.29`  
+
+---
+
+### ✅ Evaluation Results
+- **Evaluation loss**: `0.4455`  
+- **Accuracy**: `79.17%`  
+- **Precision**: `79.33%`  
+- **Recall**: `78.13%`  
+- **F1 Score**: `78.46%`  
+- **Evaluation runtime**: `0.49s`  
+
+---
+
+## 📌 Notes
+
+- The training remained stable across all 3 epochs without signs of severe overfitting.
+- Evaluation scores indicate a balanced performance, considering the small dataset size.
+---
 
 ## Dataset
 
